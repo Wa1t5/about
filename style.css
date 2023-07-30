@@ -1,12 +1,22 @@
 body {
     background-color: black;
     color: rgb(165, 32, 165);
+    font-family: monospace;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;   
+    overflow-x: hidden;
 }
 
-.About {
-    line-height: 8px;
+.title {
+    width: 420px;
+    overflow-x: hidden;
+    line-height: 0px;
 }
 
-.ProgrammingLanguages {
-    line-height: 8px;
-}
+@media screen and (max-width: 437px) {
+
+    .title {
+        width: 100%;
+    }
+  }
